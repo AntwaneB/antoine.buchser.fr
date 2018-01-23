@@ -1,0 +1,41 @@
+.display-5 {
+  font-size: 2.5rem;
+  font-weight: 300;
+  line-height: 1.2; }
+  .display-5 small {
+    font-style: italic;
+    font-size: 60%;
+    color: rgba(0, 0, 0, 0.6); }
+  .display-5 a {
+    color: rgba(0, 0, 0, 0.8); }
+    .display-5 a:hover {
+      text-decoration: none;
+      color: rgba(0, 0, 0, 0.4); }
+
+.row.even {
+  background-color: #ffffff;
+  color: #464646; }
+.row.odd {
+  background-color: #464646;
+  color: #ffffff; }
+
+.section-content {
+  padding: 50px 0; }
+
+.project {
+  margin: 10px 0; }
+  .project .project-link i {
+    margin-right: 5px;
+    display: inline-block; }
+  .project .project-image {
+    width: 100%; }
+  .project .right-col {
+    padding-left: 0; }
+    .project .right-col .image-wrapper {
+      width: 100%;
+      overflow: hidden;
+      text-align: center;
+      border-top-right-radius: .25rem;
+      border-bottom-right-radius: .25rem; }
+
+/*# sourceMappingURL=style.css.map */
