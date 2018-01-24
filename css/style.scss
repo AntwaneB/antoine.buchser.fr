@@ -3,6 +3,8 @@ $theme-color-light: #464646;
 $theme-bg-dark: #464646;
 $theme-color-dark: #ffffff;
 
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i');
+
 .display-5 {
 	font-size: 2.5rem;
 	font-weight: 300;
@@ -24,19 +26,90 @@ $theme-color-dark: #ffffff;
 	}
 }
 
+body {
+	background-image: url('/img/background.jpg');
+	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
+
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	font-size: 14px;
+}
+
 .row {
 	&.even {
 		background-color: $theme-bg-light;
 		color: $theme-color-light;
 	}
 	&.odd {
-		background-color: $theme-bg-dark;
+		background-image: url('/img/strips.png');
+		background-repeat: repeat;
+		background-attachment: fixed;
+		background-color: transparent;
 		color: $theme-color-dark;
 	}
 }
 
 .section-content {
-	padding: 50px 0;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.profile-picture {
+	max-width: 100%;
+	width: 200px;
+}
+
+.skills {
+	.category {
+		h3 {
+			border-bottom: 3px solid white;
+			text-transform: uppercase;
+			padding-bottom: 5px;
+			font-weight: normal;
+			margin-bottom: 5px;
+			font-size: 1em;
+		}
+	}
+
+	.skills-list {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+
+		.skill {
+			background: rgba(255,255,255,0.1);
+			height: 30px;
+			line-height: 30px;
+			margin: 5px 0px;
+			position: relative;
+			padding: 0 8px;
+
+			&.sub-skill {
+				margin-left: 30px;
+				position: relative;
+
+				&:before {
+					-webkit-font-smoothing: antialiased;
+					display: inline-block;
+					font-style: normal;
+					font-variant: normal;
+					text-rendering: auto;
+					content: "\f105";
+					font-family: Font Awesome\ 5 Free;
+					font-weight: 900;
+
+					position: absolute;
+					left: -30px;
+					width: 30px;
+					text-align: center;
+					height: 30px;
+					line-height: 30px;
+				}
+			}
+		}
+	}
 }
 
 .project {
@@ -62,6 +135,12 @@ $theme-color-dark: #ffffff;
 			text-align: center;
 			border-top-right-radius: .25rem;
 			border-bottom-right-radius: .25rem;
+		}
+	}
+
+	&.project-small {
+		.card-body {
+			padding: 1rem;
 		}
 	}
 }
