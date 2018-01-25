@@ -62,7 +62,33 @@ body {
 
 .profile-picture {
 	max-width: 100%;
-	width: 200px;
+	width: 250px;
+}
+
+.home {
+	font-size: 16px;
+
+	.title {
+		font-size: 2rem;
+	}
+
+	.contacts {
+		ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+
+			li {
+				margin: 5px 0;
+			}
+		}
+
+		a {
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	}
 }
 
 .education {
@@ -120,7 +146,7 @@ body {
 			background: rgba(255,255,255,0.1);
 			height: 30px;
 			line-height: 30px;
-			margin: 5px 0px;
+			margin: 5px 0;
 			position: relative;
 			padding: 0 8px;
 
