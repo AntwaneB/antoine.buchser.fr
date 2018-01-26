@@ -5,6 +5,10 @@ $theme-color-dark: #ffffff;
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i');
 
+strong {
+	font-weight: bold;
+}
+
 .display-5 {
 	font-size: 2.5rem;
 	font-weight: 300;
@@ -23,6 +27,18 @@ $theme-color-dark: #ffffff;
 			text-decoration: none;
 			color: rgba(0, 0, 0, 0.4);
 		}
+	}
+}
+
+.lh-1 { line-height: 1.5; }
+.lh-2 { line-height: 1.75; }
+.lh-3 { line-height: 2; }
+.lh-4 { line-height: 2.25; }
+.lh-5 { line-height: 2.5; }
+
+dl.indented {
+	dd {
+		margin-left: 15px;
 	}
 }
 
