@@ -4,3 +4,5 @@ RewriteRule ^(.*)$ https://antoine.buchser.fr/$1 [R,L]
 
 RewriteCond %{HTTP_HOST} ^transparent-furnitures\.com [NC]
 RewriteRule ^(.*)$ https://antoine.buchser.fr/$1 [R,L]
+
+RedirectMatch 404 /\.git
